@@ -3,11 +3,11 @@
   box-sizing: border-box;
   margin: 0;
   font-size: 20px;
+  color: white;
+  background-color: darkslategrey;
 }
 
 .background {
-  min-height: 100vh;
-  background-color: darkslategrey;
   display: flex;
   justify-content: center;
   align-items: center;

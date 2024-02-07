@@ -8,7 +8,7 @@ function App() {
       {/* <Accordion /> */}
       {/* <StarReviews noOfStars={5} /> */}
       {/* <ImageSlider url={"https://picsum.photos/v2/list"} limit={"4"} /> */}
-      <LoadMore url={"https://dummyjson.com/products"} />
+      <LoadMore url={"https://dummyjson.com/products"} limit={20} skip={0} />
     </main>
   );
 }
