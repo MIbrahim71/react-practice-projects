@@ -1,0 +1,41 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 20px;
+}
+
+.background {
+  min-height: 100vh;
+  background-color: darkslategrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion {
+  width: 500px;
+
+  padding: 2rem;
+  margin-top: 2rem;
+  background-color: lightgray;
+  border-radius: 14px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plus {
+  background-color: transparent;
+  border: none;
+  padding: none;
+  font-size: 2.2rem;
+}
+
+.content {
+  display: block;
+  height: auto;
+}
