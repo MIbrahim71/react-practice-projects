@@ -9,12 +9,16 @@ export default function Accordion() {
   }
 
   function handleSelectAll() {
+    if (multi) {
+      setSelected(false);
+    }
     setMulti((multi) => !multi);
   }
 
   return (
     <div>
       <button onClick={() => handleSelectAll()}>Select All</button>
+
       <div className="accordion" onClick={() => handleClick(1)}>
         <div className="title">
           <p>What are accordion components?</p>
@@ -29,6 +33,7 @@ export default function Accordion() {
           </div>
         )}
       </div>
+
       <div className="accordion" onClick={() => handleClick(2)}>
         <div className="title">
           <p>What are they used for?</p>

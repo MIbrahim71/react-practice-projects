@@ -15,7 +15,7 @@
 
 .accordion {
   width: 500px;
-
+  cursor: pointer;
   padding: 2rem;
   margin-top: 2rem;
   background-color: lightgray;
