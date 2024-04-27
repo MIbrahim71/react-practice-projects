@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./index.css";
+import "./loadmore.css";
 
 export default function LoadMore({ url, limit = 20, skip = 0 }) {
   const [loading, setLoading] = useState(false);
