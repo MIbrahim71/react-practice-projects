@@ -38,6 +38,7 @@ export default function ImageSlider({ url, limit = 1, page = 4 }) {
   // fetchImages is an asynchronous function that produces side effects. Placing it inside a useEffect hook separates side effects from component logic
   // By specifying [url] as a dependency it prevents potential infinite loops that would've occurred if 'fetchImages' was called unconditionally in the component body
   // Component code becomes cleaner and easier to read - separates concerns & makes code more maintainable
+
   useEffect(() => {
     if (url) fetchImages(url);
   }, [url]);

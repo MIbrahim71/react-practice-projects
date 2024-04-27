@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
-import "./sr.css";
 
 export default function StarReviews({ noOfStars }) {
   const [rating, setRating] = useState(0);
@@ -25,9 +24,10 @@ export default function StarReviews({ noOfStars }) {
         return (
           <FaStar
             key={index}
+            // Go yellow if the index is less than or equal to the hover no. or rating no.
             className={index <= (hover || rating) ? "active" : "inactive"}
-            onClick={() => handleClick(index)}
-            onMouseEnter={() => handleMouseEnter(index)}
+            onClick={() => handleClick(index)} // that index is set to rating
+            onMouseEnter={() => handleMouseEnter(index)} // that index is set to hover
             onMouseLeave={() => handleMouseLeave()}
             size={100}
           />

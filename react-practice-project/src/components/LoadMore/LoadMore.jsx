@@ -19,7 +19,7 @@ export default function LoadMore({ url, limit = 20, skip = 0 }) {
       if (data?.products?.length) {
         setProducts((prevData) => {
           const newProducts = data.products.filter((newProduct) => {
-            // Check if the product ID already exists in the existing products to ensure products are not appended multiple times
+            // Check if the product ID already exists in the existing products to ensure the same products are not appended multiple times
             // ensures only unique products are added, mapped only once
             return !prevData.some(
               (existingProduct) => existingProduct.id === newProduct.id
